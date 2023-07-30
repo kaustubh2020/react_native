@@ -4,6 +4,7 @@ import { useState } from "react";
 import Text_Image from "./Text_Image";
 import Buttons from "./Buttons";
 import Modals from "./Modals";
+import ActivityIndicate from "./ActivityIndicate";
 
 const logo = require("./assets/adaptive-icon.png");
 
@@ -17,6 +18,7 @@ export default function App() {
           barStyle={"light-content"}
           hidden={setstatusBarVisibility}
         />
+        <ActivityIndicate/>
         <Button
           title="hide status bar"
           color="orange"
