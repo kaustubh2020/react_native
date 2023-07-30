@@ -6,6 +6,7 @@ import Buttons from "./Buttons";
 import Modals from "./Modals";
 import ActivityIndicate from "./ActivityIndicate";
 import Alerts from "./Alerts";
+import Custom_Greet from "./Custom_Greet";
 
 const logo = require("./assets/adaptive-icon.png");
 
@@ -13,14 +14,16 @@ export default function App() {
   const [setstatusBarVisibility, setSetstatusBarVisibility] = useState(false);
   return (
     <ScrollView>
-      <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
+      <View style={{ backgroundColor: "plum", padding: 60 }}>
         <StatusBar
           backgroundColor="midnightblue"
           barStyle={"light-content"}
           hidden={setstatusBarVisibility}
         />
-        <Alerts/>
-        <ActivityIndicate/>
+        <Custom_Greet name={"Average"} />
+        <Custom_Greet name={"Shroud"} />
+        <Alerts />
+        <ActivityIndicate />
         <Button
           title="hide status bar"
           color="orange"
