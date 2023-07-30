@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function ActivityIndicate() {
   const [showActivityIndicator, setShowActivityIndicator] = useState(false);
   return (
-    <View style={{ flex: 1, padding: 30 }}>
+    <View style={{ flex: 1 }}>
       <ActivityIndicator
         size="large"
         color="black"
