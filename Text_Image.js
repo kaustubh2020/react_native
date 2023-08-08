@@ -1,11 +1,17 @@
+import React from "react";
 import { Text, Image } from "react-native";
 
+// Import the logo image
 const logo = require("./assets/adaptive-icon.png");
 
+// Define the Text_Image component
 export default function Text_Image() {
   return (
     <>
-      <Image source={logo} style={{ width: 300, height: 300 }}></Image>
+      {/* Display the logo image */}
+      <Image source={logo} style={{ width: 300, height: 300 }} />
+
+      {/* Display the text */}
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Pellentesque
@@ -23,12 +29,14 @@ export default function Text_Image() {
         augue ut lectus arcu bibendum. Suspendisse faucibus interdum posuere
         lorem.
       </Text>
+
+      {/* Display the second image */}
       <Image
         source={{
           uri: "https://images.unsplash.com/photo-1669841653344-8be26d70444f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1092&q=80",
         }}
         style={{ width: 300, height: 300 }}
-      ></Image>
+      />
     </>
   );
 }
